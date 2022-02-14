@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D381D1B37FFF74928B2B5A7 /* Pods_Recru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDD459123070367314C9433 /* Pods_Recru.framework */; };
 		B29C1ED927BA60DF00A028F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */; };
-		B29C1EDB27BA60DF00A028F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1EDA27BA60DF00A028F9 /* SceneDelegate.swift */; };
 		B29C1EDD27BA60DF00A028F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1EDC27BA60DF00A028F9 /* ViewController.swift */; };
 		B29C1EE027BA60DF00A028F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29C1EDE27BA60DF00A028F9 /* Main.storyboard */; };
 		B29C1EE227BA60E100A028F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29C1EE127BA60E100A028F9 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		8746BF562523FBC678762158 /* Pods-Recru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recru.release.xcconfig"; path = "Target Support Files/Pods-Recru/Pods-Recru.release.xcconfig"; sourceTree = "<group>"; };
 		B29C1ED527BA60DF00A028F9 /* Recru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B29C1EDA27BA60DF00A028F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B29C1EDC27BA60DF00A028F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B29C1EDF27BA60DF00A028F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B29C1EE127BA60E100A028F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 				4388DD9B58A633C767178D58 /* Pods-Recru.debug.xcconfig */,
 				8746BF562523FBC678762158 /* Pods-Recru.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */,
-				B29C1EDA27BA60DF00A028F9 /* SceneDelegate.swift */,
 				B29C1EDC27BA60DF00A028F9 /* ViewController.swift */,
 				B29C1EDE27BA60DF00A028F9 /* Main.storyboard */,
 				B29C1EE127BA60E100A028F9 /* Assets.xcassets */,
@@ -209,7 +205,6 @@
 			files = (
 				B29C1EDD27BA60DF00A028F9 /* ViewController.swift in Sources */,
 				B29C1ED927BA60DF00A028F9 /* AppDelegate.swift in Sources */,
-				B29C1EDB27BA60DF00A028F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
