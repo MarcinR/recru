@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D381D1B37FFF74928B2B5A7 /* Pods_Recru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDD459123070367314C9433 /* Pods_Recru.framework */; };
 		B29C1ED927BA60DF00A028F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */; };
 		B29C1EDB27BA60DF00A028F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1EDA27BA60DF00A028F9 /* SceneDelegate.swift */; };
 		B29C1EDD27BA60DF00A028F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1EDC27BA60DF00A028F9 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BDD459123070367314C9433 /* Pods_Recru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4388DD9B58A633C767178D58 /* Pods-Recru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recru.debug.xcconfig"; path = "Target Support Files/Pods-Recru/Pods-Recru.debug.xcconfig"; sourceTree = "<group>"; };
+		8746BF562523FBC678762158 /* Pods-Recru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recru.release.xcconfig"; path = "Target Support Files/Pods-Recru/Pods-Recru.release.xcconfig"; sourceTree = "<group>"; };
 		B29C1ED527BA60DF00A028F9 /* Recru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29C1EDA27BA60DF00A028F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D381D1B37FFF74928B2B5A7 /* Pods_Recru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		643135E1201293A5D380E0C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4388DD9B58A633C767178D58 /* Pods-Recru.debug.xcconfig */,
+				8746BF562523FBC678762158 /* Pods-Recru.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F1BCF7C34207DF77019145B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BDD459123070367314C9433 /* Pods_Recru.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B29C1ECC27BA60DF00A028F9 = {
 			isa = PBXGroup;
 			children = (
 				B29C1ED727BA60DF00A028F9 /* Recru */,
 				B29C1ED627BA60DF00A028F9 /* Products */,
+				643135E1201293A5D380E0C1 /* Pods */,
+				8F1BCF7C34207DF77019145B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B29C1EE927BA60E100A028F9 /* Build configuration list for PBXNativeTarget "Recru" */;
 			buildPhases = (
+				A165E24E342EAE994986233C /* [CP] Check Pods Manifest.lock */,
 				B29C1ED127BA60DF00A028F9 /* Sources */,
 				B29C1ED227BA60DF00A028F9 /* Frameworks */,
 				B29C1ED327BA60DF00A028F9 /* Resources */,
+				A6564BC00EE66159635DAF2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A165E24E342EAE994986233C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6564BC00EE66159635DAF2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recru/Pods-Recru-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recru/Pods-Recru-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Recru/Pods-Recru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B29C1ED127BA60DF00A028F9 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		B29C1EEA27BA60E100A028F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4388DD9B58A633C767178D58 /* Pods-Recru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		B29C1EEB27BA60E100A028F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8746BF562523FBC678762158 /* Pods-Recru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
