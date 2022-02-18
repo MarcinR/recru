@@ -28,6 +28,11 @@ class RecruTests: XCTestCase {
         XCTAssertEqual(result, .incorrect("Address can not be empty"))
     }
     
+    func testIfValidateCorrectFormat() throws {
+        let result = URLValidator.validateAddres(addressString: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210331185031/Java-Programming-Examples")
+        XCTAssertEqual(result, .incorrect("URL address should end with .png or .jpg"))
+    }
+    
     func testIfValidateCorrectString() throws {
         let result = URLValidator.validateAddres(addressString: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210331185031/Java-Programming-Examples.png")
         let url = URL(string: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210331185031/Java-Programming-Examples.png")

@@ -21,15 +21,17 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func didTapShowImage() {
-        switch URLValidator.validateAddres(addressString: textField.text) {
-        case .correct(let url):
-            imageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: textField.text))
-            return
-        case .incorrect(let errorDescription):
-            let alertController = UIAlertController(title: "Error", message: errorDescription, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alertController, animated: true)
-            return
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            switch URLValidator.validateAddres(addressString: self.textField.text) {
+            case .correct(let url):
+                self.imageView.kf.setImage(with: ImageResource(downloadURL: url, cacheKey: self.textField.text))
+                return
+            case .incorrect(let errorDescription):
+                let alertController = UIAlertController(title: "Error", message: errorDescription, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true)
+                return
+            }
         }
     }
 }

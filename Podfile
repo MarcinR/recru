@@ -6,5 +6,5 @@ target 'Recru' do
   use_frameworks!
 
   # Pods for Recru
-  pod 'Kingfisher', '~> 6.0'
+  pod 'Kingfisher'
 end
