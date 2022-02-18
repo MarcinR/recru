@@ -8,21 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		2D381D1B37FFF74928B2B5A7 /* Pods_Recru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDD459123070367314C9433 /* Pods_Recru.framework */; };
+		B2510B7927BFA8AE0065E6CE /* RecruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2510B7827BFA8AE0065E6CE /* RecruTests.swift */; };
+		B2510B8027BFB4330065E6CE /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2510B7F27BFB4330065E6CE /* Validators.swift */; };
 		B29C1ED927BA60DF00A028F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */; };
-		B29C1EDD27BA60DF00A028F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1EDC27BA60DF00A028F9 /* ViewController.swift */; };
+		B29C1EDD27BA60DF00A028F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C1EDC27BA60DF00A028F9 /* MainViewController.swift */; };
 		B29C1EE027BA60DF00A028F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29C1EDE27BA60DF00A028F9 /* Main.storyboard */; };
 		B29C1EE227BA60E100A028F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29C1EE127BA60E100A028F9 /* Assets.xcassets */; };
 		B29C1EE527BA60E100A028F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29C1EE327BA60E100A028F9 /* LaunchScreen.storyboard */; };
 		B2E534BA27BA6B510010049D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E534B927BA6B510010049D /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B2510B7A27BFA8AE0065E6CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29C1ECD27BA60DF00A028F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B29C1ED427BA60DF00A028F9;
+			remoteInfo = Recru;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0BDD459123070367314C9433 /* Pods_Recru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4388DD9B58A633C767178D58 /* Pods-Recru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recru.debug.xcconfig"; path = "Target Support Files/Pods-Recru/Pods-Recru.debug.xcconfig"; sourceTree = "<group>"; };
 		8746BF562523FBC678762158 /* Pods-Recru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recru.release.xcconfig"; path = "Target Support Files/Pods-Recru/Pods-Recru.release.xcconfig"; sourceTree = "<group>"; };
+		B2510B7627BFA8AE0065E6CE /* RecruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2510B7827BFA8AE0065E6CE /* RecruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruTests.swift; sourceTree = "<group>"; };
+		B2510B7F27BFB4330065E6CE /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		B29C1ED527BA60DF00A028F9 /* Recru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B29C1EDC27BA60DF00A028F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B29C1EDC27BA60DF00A028F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B29C1EDF27BA60DF00A028F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B29C1EE127BA60E100A028F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29C1EE427BA60E100A028F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B2510B7327BFA8AE0065E6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B29C1ED227BA60DF00A028F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +81,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B2510B7727BFA8AE0065E6CE /* RecruTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2510B7827BFA8AE0065E6CE /* RecruTests.swift */,
+			);
+			path = RecruTests;
+			sourceTree = "<group>";
+		};
 		B29C1ECC27BA60DF00A028F9 = {
 			isa = PBXGroup;
 			children = (
 				B29C1ED727BA60DF00A028F9 /* Recru */,
+				B2510B7727BFA8AE0065E6CE /* RecruTests */,
 				B29C1ED627BA60DF00A028F9 /* Products */,
 				643135E1201293A5D380E0C1 /* Pods */,
 				8F1BCF7C34207DF77019145B /* Frameworks */,
@@ -73,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B29C1ED527BA60DF00A028F9 /* Recru.app */,
+				B2510B7627BFA8AE0065E6CE /* RecruTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +114,8 @@
 			children = (
 				B29C1ED827BA60DF00A028F9 /* AppDelegate.swift */,
 				B2E534B927BA6B510010049D /* SceneDelegate.swift */,
-				B29C1EDC27BA60DF00A028F9 /* ViewController.swift */,
+				B29C1EDC27BA60DF00A028F9 /* MainViewController.swift */,
+				B2510B7F27BFB4330065E6CE /* Validators.swift */,
 				B29C1EDE27BA60DF00A028F9 /* Main.storyboard */,
 				B29C1EE127BA60E100A028F9 /* Assets.xcassets */,
 				B29C1EE327BA60E100A028F9 /* LaunchScreen.storyboard */,
@@ -94,6 +127,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B2510B7527BFA8AE0065E6CE /* RecruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2510B7E27BFA8AE0065E6CE /* Build configuration list for PBXNativeTarget "RecruTests" */;
+			buildPhases = (
+				B2510B7227BFA8AE0065E6CE /* Sources */,
+				B2510B7327BFA8AE0065E6CE /* Frameworks */,
+				B2510B7427BFA8AE0065E6CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2510B7B27BFA8AE0065E6CE /* PBXTargetDependency */,
+			);
+			name = RecruTests;
+			productName = RecruTests;
+			productReference = B2510B7627BFA8AE0065E6CE /* RecruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B29C1ED427BA60DF00A028F9 /* Recru */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B29C1EE927BA60E100A028F9 /* Build configuration list for PBXNativeTarget "Recru" */;
@@ -123,6 +174,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					B2510B7527BFA8AE0065E6CE = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B29C1ED427BA60DF00A028F9;
+					};
 					B29C1ED427BA60DF00A028F9 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -142,11 +197,19 @@
 			projectRoot = "";
 			targets = (
 				B29C1ED427BA60DF00A028F9 /* Recru */,
+				B2510B7527BFA8AE0065E6CE /* RecruTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B2510B7427BFA8AE0065E6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B29C1ED327BA60DF00A028F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,17 +265,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B2510B7227BFA8AE0065E6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2510B7927BFA8AE0065E6CE /* RecruTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B29C1ED127BA60DF00A028F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29C1EDD27BA60DF00A028F9 /* ViewController.swift in Sources */,
+				B2510B8027BFB4330065E6CE /* Validators.swift in Sources */,
+				B29C1EDD27BA60DF00A028F9 /* MainViewController.swift in Sources */,
 				B29C1ED927BA60DF00A028F9 /* AppDelegate.swift in Sources */,
 				B2E534BA27BA6B510010049D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2510B7B27BFA8AE0065E6CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B29C1ED427BA60DF00A028F9 /* Recru */;
+			targetProxy = B2510B7A27BFA8AE0065E6CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B29C1EDE27BA60DF00A028F9 /* Main.storyboard */ = {
@@ -234,6 +314,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B2510B7C27BFA8AE0065E6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WRHQXQE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appunite.recru.RecruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recru.app/Recru";
+			};
+			name = Debug;
+		};
+		B2510B7D27BFA8AE0065E6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WRHQXQE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appunite.recru.RecruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recru.app/Recru";
+			};
+			name = Release;
+		};
 		B29C1EE727BA60E100A028F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B2510B7E27BFA8AE0065E6CE /* Build configuration list for PBXNativeTarget "RecruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2510B7C27BFA8AE0065E6CE /* Debug */,
+				B2510B7D27BFA8AE0065E6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B29C1ED027BA60DF00A028F9 /* Build configuration list for PBXProject "Recru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
